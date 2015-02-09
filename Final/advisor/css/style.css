@@ -1,0 +1,140 @@
+/* demo page styles */
+body {
+   
+    
+    margin:0;
+    padding:0;
+}
+
+.example {
+   
+    width:1160px;
+    height:50px;
+    
+    margin:-19px auto;/*drop down r menu ta*/ 
+    //padding:0;;/*drop down r menu ta full asha*/
+    border-radius:3px;
+    -moz-border-radius:3px;/*round krar jno use kri*/
+    -webkit-border-radius:3px;
+}
+
+	
+/* main menu styles */
+#nav {
+    display:inline-block;
+    width:100%;
+    margin:0px auto;/*drop down r bar ta shuro hba*/
+    padding:0px;/*home r likha ta kon jaga thka shuro hba*/
+    background:#006699;
+
+    border-radius:10px; /*some css3*/
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    box-shadow:0 2px 2px rgba(0,0,0, .5);
+    -moz-box-shadow:0 2px 2px rgba(0,0,0, .5);
+    -webkit-box-shadow:0 2px 2px rgba(0,0,0, .5);/*drop down border r shadow*/
+}
+#nav li {
+    margin:10px;
+    
+    float:left;
+    left:250px;
+    position:relative;
+    list-style:none;
+}
+#nav a {
+    font-weight:bold;
+    font-size:17px;
+    color:#fff;
+    text-decoration:none;
+    display:block;
+    padding:8px 20px;/*home,reg r border ta koto hba seta*/
+    
+    border-radius:5px; /*some css3*/*/
+    -moz-border-radius:5px;/*home,reg. r vitor ja sada box ta acha seta*/
+    -webkit-border-radius:5px;
+    text-shadow:0 2px 2px rgba(1,1,1, 1.7);/*home r likha tar shadow*/
+}
+
+/* selected menu element */
+#nav .current a, #nav li:hover > a {
+    background:#006699;
+    color:#000;
+    border-top:1px solid #f8f8f8;
+
+    box-shadow:0 2px 2px rgba(0,0,0, .7); /*some css3*/
+    -moz-box-shadow:0 2px 2px rgba(0,0,0, .7);
+    -webkit-box-shadow:0 2px 2px rgba(0,0,0, .7);
+    text-shadow:0 2px 2px rgba(255,255,255, 0.7);/*home r likha ta chng hoia jba*/
+}
+
+/* sublevels */
+#nav ul li:hover a, #nav li:hover li a {
+    background:none;
+    border:none;
+    color:#fff;
+}
+#nav ul li a:hover {
+    background:#006699;
+    color:#fff;
+
+    border-radius:15px; /*some css3*/
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    text-shadow:0 2px 2px rgba(1,1,1, 1.7);/*insert r likha ta chng hoia jba*/
+}
+
+#nav ul li:first-child > a {
+    -moz-border-radius-topleft:15px; /*some css3*/
+    -moz-border-radius-topright:15px;
+    -webkit-border-top-left-radius:15px;/*Defines the shape of the border of the top-left corner*/
+    -webkit-border-top-right-radius:15px;/*Defines the shape of the border of the top-right corner*/
+}
+#nav ul li:last-child > a {
+    -moz-border-radius-bottomleft:15px; /*some css3*/
+    -moz-border-radius-bottomright:15px;
+    -webkit-border-bottom-left-radius:15px;/*Defines the shape of the border of the bottom-left corner*/
+    -webkit-border-bottom-right-radius:15px;/*Defines the shape of the border of the bottom-right corner*/
+}
+
+/* drop down */
+#nav li:hover > ul {
+    opacity:1;/*Sets the opacity level for an element*/
+    visibility:visible;
+}
+#nav ul {
+    opacity:0;
+    visibility:hidden;
+    padding:0;
+   
+    width:175px;
+    left:0px;
+    position:absolute;
+    background:#006699;
+    border:1px solid #7788aa;
+
+    border-radius:5px; /*some css3*/
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    box-shadow:0 2px 2px rgba(0,0,0, .5);
+    -moz-box-shadow:0 2px 2px rgba(0,0,0, .5);
+    -webkit-box-shadow:0 2px 2px rgba(0,0,0, .5);
+
+    -moz-transition:opacity .25s linear, visibility .1s linear .1s;
+    -webkit-transition:opacity .25s linear, visibility .1s linear .1s;
+    -o-transition:opacity .25s linear, visibility .1s linear .1s;
+    transition:opacity .25s linear, visibility .1s linear .1s;
+}
+#nav ul li {
+    float:none;
+    margin:0;
+    left:1px;
+}
+#nav ul a {
+    font-weight:normal;
+    text-shadow:0 2px 2px rgba(255,255,255, 0.7);
+}
+#nav ul ul {
+    left:175px;
+    top:0px;
+}

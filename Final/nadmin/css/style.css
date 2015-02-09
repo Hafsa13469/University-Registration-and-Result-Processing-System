@@ -1,0 +1,161 @@
+/* demo page styles */
+body {
+
+    margin:0;
+    padding:0;
+    
+
+}
+/*****************image*****************/
+#header {
+	
+         position:absolute;
+        background:#4863A0;
+	
+        height:300px;
+
+        width:1000px;	
+        margin:0;
+	
+        padding:0;
+        color:white;
+       /* padding-top:15px;
+        text-align:center;	
+        margin-top:-20px;
+        border-bottom:1px solid black; */
+       
+        
+       }
+.example {
+      
+	  width:1125px;/*bar tr width***/
+      height:60px;
+    
+    margin:-19px auto;/*drop down r menu ta*/ 
+    padding:0px;/*drop down r menu ta full asha*/
+    border-radius:3px;
+    -moz-border-radius:3px;/*round krar jno use kri*/
+    -webkit-border-radius:3px;
+}
+
+
+
+/* main menu styles */
+#nav {
+    display:inline-block;/*menu bar ta show */
+    width:100%;
+    margin:0px auto;/*drop down r bar ta ktotuku upor theke shuro hba*/
+    padding:0px;/*home r likha ta kon jaga thka shuro hba*/
+    background:#90C;/*mouse rkle bar tar je color hoi*/
+    
+   
+    border-radius:10px; /*some css3*/
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    box-shadow:0 2px 2px rgba(0,0,0,.5);
+    -moz-box-shadow:0 2px 2px rgba(0,0,0, .5);
+    -webkit-box-shadow:0 2px 2px rgba(0,0,0, .5);/*drop down border r shadow*/
+}
+#nav li {
+    margin:10px;/*bar tar height ta barano ja*/
+    
+    float:left;
+    left:130px;/* bar tar likha gulu kon jiga theke shuru hbe*/
+    position:relative;
+    list-style:none;
+}
+#nav a {
+    font-weight:bold;/*bar tar likha gulor font*/
+    font-size:21px;
+    color:#fff;
+    text-decoration:none;
+    display:block;/*eta na thkle bar ta choto hye ji*/
+    padding:8px 20px;/*home,reg r border tar height koto hba seta*/
+    
+    border-radius:1px; /*some css3*/
+    -moz-border-radius:1px;/*home,reg. r vitor ja sada box ta acha seta*/
+    -webkit-border-radius:1px;
+    text-shadow:0 1px 1px rgba(0,0,0, 0.7);/*home r likha tar shadow*/
+}
+
+/* selected menu element */
+#nav .current a, #nav li:hover > a {
+    background:#90C;/*mouse likhar upor rakhle bartar je color hbe*/
+    color:#000;/*likhtar color ta*/
+    border-top:1px solid #f8f8f8;
+
+    box-shadow:0 1px 1px rgba(0,0,0, .7); /*some css3*/
+    -moz-box-shadow:0 1px 1px rgba(0,0,0, .7);
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0, .7);
+    text-shadow:0 1px 1px rgba(255,255,255, 0.7);/*home r likha ta chng hoia jba*/
+}
+
+/* sublevels */
+#nav ul li:hover a, #nav li:hover li a {
+    background:none;
+    border:none;
+    color:#fff;
+}
+#nav ul li a:hover {
+    background:#90C;
+    color:#fff;
+
+    border-radius:15px; /*some css3*/
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    text-shadow:0 1px 1px rgba(0,0,0, 0.7);/*insert r likha ta chng hoia jba*/
+}
+
+#nav ul li:first-child > a {
+   -moz-border-radius-topleft:15px; /*some css3*/
+    -moz-border-radius-topright:15px;
+    -webkit-border-top-left-radius:15px;/*Defines the shape of the border of the top-left corner*/
+    -webkit-border-top-right-radius:15px;/*Defines the shape of the border of the top-right corner*/
+}
+#nav ul li:last-child > a {
+    -moz-border-radius-bottomleft:15px; /*some css3*/
+    -moz-border-radius-bottomright:15px;
+    -webkit-border-bottom-left-radius:15px;/*Defines the shape of the border of the bottom-left corner*/
+    -webkit-border-bottom-right-radius:15px;/*Defines the shape of the border of the bottom-right corner*/
+}
+
+/* drop down */
+#nav li:hover > ul {
+    opacity:1;/*Sets the opacity level for an element*/
+    visibility:visible;
+}
+#nav ul {
+    opacity:0;
+    visibility:hidden;
+    padding:0;
+   
+    width:185px;/*niche je likha gulo ashe shegular je beguni bar ta ashe shetar width*/
+    left:0px;
+    position:absolute;
+    background:#90C;
+    border:1px solid #7788aa;
+
+    border-radius:18px; /*some css3*/
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    box-shadow:0 2px 2px rgba(0,0,0, .5);
+    -moz-box-shadow:0 2px 2px rgba(0,0,0, .5);
+    -webkit-box-shadow:0 2px 2px rgba(0,0,0, .5);
+
+    -moz-transition:opacity .25s linear, visibility .1s linear .1s;
+    -webkit-transition:opacity .25s linear, visibility .1s linear .1s;
+   transition:opacity .25s linear, visibility .1s linear .1s;
+}
+#nav ul li {
+    float:none;
+    margin:0px;/*nicher bar tar likha gulo kotha theke shuru hobe*/
+	left:1px;
+}
+#nav ul a {
+    font-weight:normal;/*insert likhatar jonno*/ 
+    text-shadow:0 1px 1px rgba(255,255,255, 0.7);
+}
+#nav ul ul {
+    left:175px; 
+    top:0px;
+}
